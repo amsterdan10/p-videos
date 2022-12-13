@@ -8,44 +8,52 @@
 }
 
 body {
-    background-color: #444444;
+    background-color: #000;
     text-align: center;
-    color: white;
+    color: #fff;
     font-family: Arial, Helvetica, sans-serif;
     
 }
 
-main {
-    background-color: #000000c2;
-    max-width: 650px;
-    height: 400px;
+main#container__first {
+    border-width: 0px 10px 10px 10px;
+    border-style: solid;
+    border-color: #222222;
+    max-width: 670px;
+    height: 440px;
     margin: 0 auto;
     border-radius: 0px 0px 20px 20px;
 }
 
 h1 {
     padding: 15px;
-    font-size: 2.3em;
-    text-shadow: 5px 5px 5px #00000080;
+    font-size: 2.5em;
 }
 
-img {
-    margin: 10px 10px 10px 10px;
+img.thumb {
+    height: auto;
+    width: 230px;
     border-radius: 10px;
+    margin: 10px 10px 10px 10px;
     transition: .5s;
-    filter: drop-shadow(5px 5px 5px #0000008f); 
 }
 
-img:hover {
+img.thumb:hover {
     transform: scale(1.1);
 }
 
 /* Demais páginas */
 
-main#segunda {
-    padding: 0px 20px 0px 20px;
+main#container__second {
     max-width: 700px;
-    height: 570px;
+    height: 600px;
+    border-width: 0px 10px 10px 10px;
+    border-style: solid;
+    border-color: #222222;
+    margin: 0 auto;
+    border-radius: 0px 0px 20px 20px;
+    padding: 0px 20px 0px 20px;
+    
 }
 
 div.video {
@@ -61,12 +69,12 @@ div.video > iframe {
     top: 0px;
     left: 0px;
     border-radius: 10px;
-    background-color: #808080;
+    background-color: #444444;
 }
 
 a {
     text-decoration: none;
-    color: white;
+    color: #fff;
 }
 
 a:hover {
@@ -74,27 +82,40 @@ a:hover {
 }
 
 a:active {
-    color:rgb(68, 68, 68);
+    color:#444444;
 }
 
 p {
     font-weight: bold;
     padding: 15px 0px 5px 0px;
-    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
 }
 
-@media (max-width:380px){
+img.button {
+    transition: .5s;
+}
+
+img.button:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width:600px){
 	
     body {
         background-color: #000000;
     }
 
-    main {
+    main#container__first {
+        border: none;
         height: 100%;
-        padding-bottom: 20px;
+        padding-bottom: 40px;
     }
 
-    img {
+    main#container__second {
+        border: none;
+        height: 100%;
+    }
+
+    img.thumb {
         width: 85%;
     }
 
